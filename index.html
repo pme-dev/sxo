@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <title>Lorem ipsum</title>
+    <meta
+      name="description"
+      content=""
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="favicon.ico" />
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/angular-gondole.min.js"></script>
+    <script src="./js/angular-animate.min.js"></script>
+    <script src="./js/gondole.js"></script>
+    <script src="./js/waypoints.min.js"></script>
+    <script src="./js/jquery.customSelect.min.js"></script>
+    <script src="./js/garlic.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js" integrity="sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-9QR0K7M98Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-9QR0K7M98Y');
+    </script>
+
+    <link
+      rel="preload"
+      as="font"
+      crossorigin="anonymous"
+      href="./fonts/proxima-nova/ProximaNova-Light.woff"
+    />
+    <link
+      rel="preload"
+      as="font"
+      crossorigin="anonymous"
+      href="./fonts/proxima-nova/ProximaNova-Extrabld.woff"
+    />
+    <link
+      rel="preload"
+      as="font"
+      crossorigin="anonymous"
+      href="./fonts/proxima-nova/ProximaNova-Regular.woff"
+    />
+    <link
+      rel="preload"
+      as="font"
+      crossorigin="anonymous"
+      href="./fonts/gandhi/GandhiSerif-Regular-webfont.woff"
+    />
+    <link
+      rel="preload"
+      as="font"
+      crossorigin="anonymous"
+      href="./fonts/intro-inline/2D3034_0_0.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      crossorigin="anonymous"
+      href="./fonts/proxima-nova/ProximaNova-Regular.woff"
+    />
+    <link
+      rel="preload"
+      as="font"
+      crossorigin="anonymous"
+      href="./fonts/proxima-nova/ProximaNova-Bold.woff"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
+  </head>
+
+  <body class="no-touch">
+    <div id="vertical-nav-pins">
+      <a data-analytics="Pins:bloc 1" href="#slide-header" class="pin">
+        <img alt="bouton navigation" src="./img/pin.png" />
+      </a>
+      <a data-analytics="Pins:bloc 2" href="#slide-digital" class="pin">
+        <img alt="bouton navigation" src="./img/pin.png" />
+      </a>
+      <a data-analytics="Pins:bloc 3" href="#slide-contact" class="pin">
+        <img alt="bouton navigation" src="./img/pin.png" />
+      </a>
+    </div>
+
+    <div id='main-menu' class='stays-small'>
+      <div class='container dotted-border clearfix'>
+        <a data-analytics='Menu:logo' class='logo' href='/'>
+          <img src="./img/logo-small.png" alt='agence digitale 50A' />
+        </a>
+        <ul class='clearfix'>
+          <li><a style='line-height: 1.2em;' data-analytics='Menu:dispositifs digitaux' href='/'>Menu 1</a></li>
+          <li><a style='line-height: 1.2em;' data-analytics='Menu:social media' href='/'>Menu 2</a></li>
+          <li><a style='line-height: 1.2em;' data-analytics='Menu:inbound marketing automation' href='/'>Menu 3</a></li>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id="mobile-menu" class='mobile'>
+      <div class='fixed-part container'>
+        <a class='open clearfix' href='#'>
+          <img class='logo' src="./img/logo-couleur.png" alt='logo' />
+          <img class='burger' src="./img/burger.png" alt='menu burger' />
+        </a>
+      </div>
+      <div class='moving-part container'>
+        <ul>
+          <li><a href='/'>Home</a></li>
+          <li><a class='yellow' href='/'>Menu 1</a></li>
+          <li><a class='red' href='/'>Menu 2</a></li>
+          <li><a class='blue' href='/'>Menu 2</a></li>
+        </ul>
+      </div>  
+    </div>
+    
+    <section id="main">
+      <div id="home">
+        <div
+          id="slide-header"
+          style="
+            background-image: url('./img/webagency.jpg');
+          "
+          class="header cover full-height"
+          data-index="0"
+          data-bg-color="dark"
+        >
+          <div class="container">
+            <div class="sub-container vertical-align">
+              <div>
+                <h1>Vestibulum ante ipsum primis in faucibus orci luctus</h1>
+                <p class="sub-gandhi sub-mobile">
+                  Suspendisse facilisis urna a quam lacinia, ac luctus leo
+                  varius. Cras ligula arcu, placerat sit amet mauris
+                  sollicitudin, tristique consectetur diam. Vivamus ultricies
+                  nisi a fermentum convallis.
+                </p>
+              </div>
+            </div>
+            <a
+              class="down"
+              href="#slide-digital"
+              data-analytics="Navigation:bloc1 descendre"
+            >
+              <img alt="descendre" src="./img/go-down.png" />
+            </a>
+          </div>
+        </div>
+        <div id="slide-digital" data-index="1" data-bg-color="light">
+          <div class="container">
+            <div class="col-2">
+              <div class="left-part">
+                <img alt="telephone mobile" src="./img/telephone-design.png" />
+              </div>
+              <div class="right-part">
+                <h2>Suspendisse eleifend ullamcorper justo</h2>
+                <p class="first">
+                  Id pulvinar augue. Vestibulum malesuada pellentesque libero.
+                  Proin nec quam augue. Donec ut felis maximus, eleifend mauris
+                  ut, euismod est. Nam eget ligula ut augue porta mattis.
+                  Curabitur mollis lacus sed lectus lacinia iaculis.
+                </p>
+                <a class="btn hvr-sweep-to-top" href="/">Nam mattis</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="social">
+          <div class="container">
+            <div class="col-2">
+              <div class="left-part">
+                <div>
+                  <h2>Nam eget ligula ut augue porta</h2>
+                  <p>
+                    Nulla massa velit, auctor et eros at, iaculis luctus elit.
+                    Morbi ac nunc egestas, eleifend tortor in, bibendum est.
+                    Curabitur non finibus justo, vel euismod quam. Cras volutpat
+                    porta felis vitae porta. Quisque ut nunc dictum, posuere
+                    augue id, tempor lectus.
+                  </p>
+                  <a class="btn black hvr-sweep-to-top" href="/">Nam mattis</a>
+                </div>
+              </div>
+              <div class="right-part">
+                <img alt="discussion" src="./img/bulles-design.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inbound">
+          <div class="container">
+            <div class="col-2">
+              <div class="left-part">
+                <img
+                  alt="telephone mobile"
+                  src="./img/aimant-inbound-marketing.png"
+                />
+              </div>
+              <div class="right-part">
+                <h2>Vestibulum sit amet lectus quam</h2>
+                <p class="first">
+                  Duis lectus sapien, congue nec lorem aliquet, malesuada
+                  pharetra neque. Etiam et turpis at tortor tincidunt cursus eu
+                  non magna. Curabitur at lacus sed velit congue aliquam.
+                </p>
+                <a class="btn hvr-sweep-to-top" href="/">Nam mattis</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-media" id="video-media">
+          <div class="container">
+            <div class="col-2">
+              <div class="left-part">
+                <div>
+                  <h2>Suspendisse dolor nibh</h2>
+                  <p>
+                    Proin sollicitudin purus eros, vitae imperdiet felis
+                    ultrices a. Sed rhoncus velit bibendum, hendrerit magna
+                    cursus, interdum felis. Suspendisse suscipit dapibus libero,
+                    et consectetur ipsum molestie at.
+                  </p>
+                  <a class="btn white hvr-sweep-to-top" href="/">Nam mattis</a>
+                </div>
+              </div>
+              <div class="right-part">
+                <img alt="discussion" src="./img/offre-video-50A.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="numerique">
+          <div class="container">
+            <div class="col-2">
+              <div class="left-part">
+                <div>
+                  <img alt="nuage accompagner" src="./img/nuages-design.png" />
+                </div>
+              </div>
+              <div class="right-part">
+                <h2>Curabitur non finibus justo</h2>
+                <p class="first">
+                  Sed id aliquam neque. Aliquam vitae malesuada quam, non
+                  sollicitudin orci. Pellentesque in augue tincidunt, cursus
+                  nulla quis, dignissim odio.
+                </p>
+                <a class="btn hvr-sweep-to-top" href="/">Nam mattis</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="link-reference">
+        <img src="./img/ensemble-logotypes_53876-120502.jpg" alt="references" />
+        <a href="/" class="hvr-sweep-to-top">Nam mattis</a>
+      </div>
+      <div id="landing-page" class="landing-page-digital">
+        <div
+          id="slide-expertise"
+          class="slide-expertise"
+          data-index="1"
+          data-bg-color="light"
+        >
+          <div class="bottom">
+            <div class="container">
+              <div>
+                <div class="expertise-toggles" class="col-5">
+                  <h2>Sunt in culpa qui officia</h2>
+                  <ul id="toggle-view">
+                    <li>
+                      <div class="title">
+                        <h3>Curabitur at lacus</h3>
+                        <div class="sign"><span class="plus">+</span></div>
+                      </div>
+                      <div class="panel">
+                        <p>
+                          Sed id aliquam neque. Aliquam vitae malesuada quam,
+                          non sollicitudin orci. Pellentesque in augue
+                          tincidunt, cursus nulla quis, dignissim odio.
+                        </p>
+                        <div class="links">
+                          <a href="https://www.50a.fr/0/benchmark" class="link">
+<i class="fa fa-book"></i>Nam mattis
+</a>                                    
+</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="title">
+                        <h3>Ultrices posuere cubilia</h3>
+                        <div class="sign"><span class="plus">+</span></div>
+                      </div>
+                      <div class="panel">
+                        <p>
+                          Sed id aliquam neque. Aliquam vitae malesuada quam,
+                          non sollicitudin orci. Pellentesque in augue
+                          tincidunt, cursus nulla quis, dignissim odio.
+                        </p>
+                                             <div class="links">
+                          <a href="https://www.50a.fr/0/benchmark" class="link">
+<i class="fa fa-book"></i>Nam mattis
+</a>                                    
+</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="title">
+                        <h3>Mauris pharetra</h3>
+                        <div class="sign"><span class="plus">+</span></div>
+                      </div>
+                      <div class="panel">
+                        <p>
+                          Sed id aliquam neque. Aliquam vitae malesuada quam,
+                          non sollicitudin orci. Pellentesque in augue
+                          tincidunt, cursus nulla quis, dignissim odio.
+                        </p>
+                        <div class="links">
+                          <a href="https://www.50a.fr/0/benchmark" class="link">
+<i class="fa fa-book"></i>Nam mattis
+</a>                                    
+</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id='slide-contact' data-index='(modified by JS)' data-bg-color='light'>
+        <div class='container vertical-align'>
+            <div class='content'>
+                <div class='h2'>Molestie lorem vitae</div>
+                <div class=''>
+                    <div class='clearfix'>
+        
+                        <form target="_blank" method="POST" action="/" id="_form_15_" class="_form _form_15 _inline-form  _dark" novalidate="">  
+                          <input type="hidden" name="u" value="15">
+                          <input type="hidden" name="f" value="15">
+                          <input type="hidden" name="s">
+                          <input type="hidden" name="c" value="0">
+                          <input type="hidden" name="m" value="0">
+                          <input type="hidden" name="act" value="sub">
+                          <input type="hidden" name="v" value="2">
+                          <h3 class="mobile">Consectetur adipiscing elit</h3>
+                        
+                          <div class="col-2">
+                              <div class="wrapper-first">
+
+                                  
+                                  <textarea id="firstname" placeholder=" " class="input required form-contact garlic-auto-save" data-persist="garlic" name="fullname" cols="50" rows="10"></textarea>
+
+
+                                  <span class="placeholder"> Nullam lectus </span>
+
+                              </div>       
+                          </div>
+                          <div class="col-2">
+                              <div class="wrapper-third">
+                                  <textarea id="company" placeholder=" " class="input form-contact-nr garlic-auto-save" data-persist="garlic" name="field[8]" cols="50" rows="10"></textarea>
+                                  <span class="placeholder-nr"> Cursus congue </span>
+                              </div> 
+                              
+                          </div>
+                          <div class="col-2">
+                              <div class="wrapper-fourth">
+                                  <textarea id="email" placeholder=" " class="required input form-contact garlic-auto-save" data-persist="garlic" name="email" cols="50" rows="10"></textarea>
+                                  <span class="placeholder"> Vestibulum justo </span>
+
+                              </div>
+                              <div class="wrapper-fifth">
+
+                                  <textarea id="telephone" placeholder=" " class="input right form-contact-nr-r garlic-auto-save" data-persist="garlic" name="field[3]" cols="50" rows="10"></textarea>
+                                  <span class="placeholder-nr-r"> Mauris dignissim </span>
+                              </div>
+                          </div>
+                          <div class="wrapper-height">
+                              <select id="objet_contact" class="input required form-contact-selectb" name="field[11]"><option value="0">Nullam nec *</option><option value="Demande de devis">Vestibulum sed</option><option value="Candidature spontanée">Duis a leo lacus</option><option value="Autre">Sed pretium</option></select>
+                          </div>
+                          <div class="wrapper-seventh invisible">
+                              <select id="budget_contact" class="input form-contact-selectb" name="field[23]"><option value="0">Eros egestas ?*</option><option value="sollicitudin">sollicitudin</option><option value="porta">porta</option><option value="viverra">viverra</option><option value="pellentesque">pellentesque</option></select>
+                              <textarea id="budg" placeholder=" " class="input form-contact garlic-auto-save" data-persist="garlic" name="field[25]" cols="50" rows="10"></textarea>
+                          </div>
+                          
+                          <div class="wrapper-sixth">
+                              <textarea style="margin-top: 21px;" placeholder=" " class="required form-contact-message garlic-auto-save" data-persist="garlic" name="field[9]" cols="50" rows="10"></textarea>
+                              <span class="placeholder-message"> Nulla est lacus
+                              </span>
+                          </div>
+                          <button onclick="" data-analytics="Contact:formulaire" id="_form_15_submit" type="submit" class="send-button btn hvr-sweep-to-top black _submit">NAM MATTIS</button>
+                      </form>     
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <div id='block-newsletter'>
+      <div class="container">
+          <img  alt='newsletter' src="./img/newsletter.png">
+          <div class='h2'>Sed pharetra ut</div>
+          <a class="btn hvr-sweep-to-top newsletter-button" href="/"
+              target="_blank">Nam mattis</a>
+      </div>
+  </div>
+  
+  <footer class='main'>
+          <div id='block-spreaker' class="container">
+              <h2 class="podcasts-subtitle">Mauris eu interdum</h2>
+  
+                  <a class="spreaker-player" href="https://www.spreaker.com/show/example_13"
+                      data-resource="show_id=2086503" data-width="100%" data-height="250px" data-theme="dark"
+                      data-playlist="false" data-playlist-continuous="false" data-autoplay="false"
+                      data-live-autoplay="false" data-chapters-image="true" data-hide-logo="false" data-hide-likes="false"
+                      data-hide-comments="false" data-hide-sharing="false">Listen to "50A Galaxy" on Spreaker.</a>
+                  <script src="https://widget.spreaker.com/widgets.js"></script>
+  
+          </div>
+          <div id='block-spreaker-episodes' class="container">
+              <h3>Vel orci porta</h3>
+              <a href="/"
+                  target='_blank'>Posuere magna</a>
+                  <a href="/"
+                  target='_blank'>Posuere magna</a>
+                  <a href="/"
+                  target='_blank'>Posuere magna</a>
+                  <a href="/"
+                  target='_blank'>Posuere magna</a>
+                  <a href="/"
+                  target='_blank'>Posuere magna</a>
+                  <a href="/"
+                  target='_blank'>Posuere magna</a>
+                  <a href="/"
+                  target='_blank'>Posuere magna</a>
+                  <a href="/"
+                  target='_blank'>Posuere magna</a>
+                  <a href="/"
+                  target='_blank'>Posuere magna</a>
+                  <a href="/"
+                  target='_blank'>Posuere magna</a>
+                  <a href="/"
+                  target='_blank'>Posuere magna</a>
+                  <a href="/"
+                  target='_blank'>Posuere magna</a>
+                  <a href="/"
+                  target='_blank'>Posuere magna</a>
+              <a href="/" target='_blank'>Posuere magna</a>
+              <a href="/"
+                  target='_blank'>Posuere magna</a>
+          </div>
+  
+          <div id='block-subvention'>
+  
+              <div class="container">
+  
+                  <div class='h2'><i class="fa fa-heart subsheart"></i>Praesent maximus ut <strong>sapien</strong></div>
+                  <a class="btn hvr-sweep-to-top newsletter-button" href='/'>Fusce semper massa</a>
+              </div>
+          </div>
+    
+      <div class='container clearfix'>
+          <div class='column-1 col-2'>
+              <div class='we-love'>Erat <i class="fa fa-heart"></i><br>class aptent<br>taciti</div>
+              <div>
+                  <ul>
+                      <li><a data-analytics='Footer:basecamp' class='btn hvr-sweep-to-top' href='//'><i
+                                  class="fa fa-book"></i>Pharetra massa</a></li>
+                      <li><a data-analytics='Footer:blog' class='btn hvr-sweep-to-top' target='_blank'
+                              href='/'><i
+                                  class="fa fa-smile-o"></i>Pharetra massa</a></li>
+                      <li><a data-analytics='Footer:afnic' class='btn hvr-sweep-to-top' href='/'><i
+                                  class="fa fa-check-circle-o"></i>Pharetra massa</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class='column-2'>
+              <ul>
+  
+                  <li><a data-analytics='Footer:references'
+                          href='/'>Pharetra massa</a></li>
+                  <li><a data-analytics='Footer:mentions legales'
+                          href='/'>Pharetra massa</a></li>
+                  <li><a data-analytics='Footer:contact'
+                          href='/'>Pharetra massa</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a
+                          data-analytics='Footer:contact-tel' href="/"
+                          rel="me">Pharetra massa</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a
+                          data-analytics='Footer:contact-mail' href="/"
+                          rel="me">Pharetra massa</a></li>
+                  <li><a data-analytics='Footer:glossaire'
+                          href='/'>Pharetra massa</a>
+                  </li>
+              </ul>
+          </div>
+          <div class='column-3'>
+              <ul>
+                  <li><a data-analytics='Footer:newsletter' target='_blank'
+                          href='/'>Pharetra massa</a>
+                  </li>
+                  <li><a data-analytics='Footer:plan du site'
+                          href='/'>Pharetra massa</a></li>
+                  <li><a data-analytics='Footer:vintage 50A'
+                          href='/'>Pharetra massa</a></li>
+                  <li><a data-analytics='Footer:academy 50A' href='/'>Pharetra massa</a></li>
+              </ul>
+          </div>
+          <div class='column-4'>
+              <div class="social-icons">
+                  <div>
+                      <a data-analytics='Footer RS:facebook' class='first' href='/'
+                          target='_blank'><i class="fa fa-facebook"></i></a>
+                      <a data-analytics='Footer RS:slideshare' href='/'
+                          target='_blank'><i class='fa fa-slideshare'></i></a>
+                  </div>
+                  <div>
+                      <a data-analytics='Footer RS:twitter' class='first' href='/'
+                          target='_blank'><i class='fa fa-twitter'></i></a>
+                      <a data-analytics='Footer RS:instagram' href='/' target='_blank'><i
+                              class='fa fa-instagram'></i></a>
+                      <a data-analytics='Footer RS:linkedin' href='/'
+                          target='_blank'><i class='fa fa-linkedin'></i></a>
+                  </div>
+              </div>
+              <a class='w3c' target='_blank' href="/">
+                  <img src="https://www.w3.org/Icons/valid-html401" alt="Valid XHTML 4.01!" />
+              </a>
+          </div>
+      </div>
+  
+    </section>
+  </body>
+</html>
+
+<script src="./js/main.js"></script>
+<script src="./js/cookiechoices.js"></script>
