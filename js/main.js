@@ -1,10 +1,12 @@
 document.getElementById("mobile-menu").addEventListener("click", activeMenu);
-function activeMenu () {
+function activeMenu() {
   document.getElementById("mobile-menu").classList.toggle("active");
 }
 
-document.getElementById("objet_contact").addEventListener("change", objetChange);
-function objetChange () {
+document
+  .getElementById("objet_contact")
+  .addEventListener("change", objetChange);
+function objetChange() {
   let objet = document.getElementById("objet_contact").value;
   let select = document.querySelector(".wrapper-seventh");
 
@@ -17,18 +19,26 @@ function objetChange () {
   }
 }
 
-document.getElementById("budget_contact").addEventListener("change", changeBudget);
-function changeBudget () {
+document
+  .getElementById("budget_contact")
+  .addEventListener("change", changeBudget);
+function changeBudget() {
   let budg = document.getElementById("budget_contact").value;
   document.getElementById("budg").value = budg;
 }
 
-$(function () {
+// let getDiv = document.getElementById("js-append");
 
+// var newDiv = document.createElement("div");
+// newDiv.innerHTML =
+// "<div class='container'><div class='col-2'><div class='left-part'><div><img src='./img/nuages-design.png' /></div></div><div class='right-part'><h2>Curabitur non finibus justo</h2><p class='first'>Sed id aliquam neque. Aliquam vitae malesuada quam, non sollicitudin orci. Pellentesque in augue tincidunt, cursus nulla quis, dignissim odio.</p><a class='btn hvr-sweep-to-top' href='/'>Nam mattis</a></div></div></div>";
+// getDiv.appendChild(newDiv);
+
+$(function () {
   $("#mobile-menu .open").click(function (e) {
     e.preventDefault();
     $("#mobile-menu").toggleClass("active");
-  }); 
+  });
 
   var slideMovingSpeed = 750;
   var rootUrl = $("#root-url").html();
@@ -49,15 +59,19 @@ $(function () {
     var heightMainMenuSmall = 46;
     var destOffset = dest.offset().top;
     var srcOffset = $(this).offset().top;
-    var offset = destOffset + (destOffset > srcOffset ? 1 : -1) - heightMainMenuSmall;
-    $("html, body").animate({
-      scrollTop: offset
-    }, slideMovingSpeed, function () {
-      if (onAnimationEnd !== undefined) onAnimationEnd(offset);
-    });
+    var offset =
+      destOffset + (destOffset > srcOffset ? 1 : -1) - heightMainMenuSmall;
+    $("html, body").animate(
+      {
+        scrollTop: offset,
+      },
+      slideMovingSpeed,
+      function () {
+        if (onAnimationEnd !== undefined) onAnimationEnd(offset);
+      }
+    );
   }
   /* Hack function to manually set active pin when going to top of page */
-
 
   function setActivePinWhenGoingToTop(offset) {
     if (offset == -1) {
@@ -66,9 +80,12 @@ $(function () {
   }
   /* Animate scroll anchor */
 
-
   $("a[href*=#]:not([href=#])").click(function () {
-    if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+    if (
+      location.pathname.replace(/^\//, "") ==
+        this.pathname.replace(/^\//, "") &&
+      location.hostname == this.hostname
+    ) {
       var target = $(this.hash);
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
 
@@ -106,22 +123,34 @@ $(function () {
     }
   }
 
-  slidesOnPage.waypoint(function (direction) {
-    if (direction === "down") setNavOnSlideChange($(this));
-  }, {
-    continuous: false,
-    offset: "25%"
-  }).waypoint(function (direction) {
-    if (direction === "up") setNavOnSlideChange($(this));
-  }, {
-    continuous: false,
-    offset: "-25%"
-  }).waypoint(function (direction) {
-    changeNavColor($(this), direction);
-  }, {
-    continuous: false,
-    offset: "50%"
-  });
+  slidesOnPage
+    .waypoint(
+      function (direction) {
+        if (direction === "down") setNavOnSlideChange($(this));
+      },
+      {
+        continuous: false,
+        offset: "25%",
+      }
+    )
+    .waypoint(
+      function (direction) {
+        if (direction === "up") setNavOnSlideChange($(this));
+      },
+      {
+        continuous: false,
+        offset: "-25%",
+      }
+    )
+    .waypoint(
+      function (direction) {
+        changeNavColor($(this), direction);
+      },
+      {
+        continuous: false,
+        offset: "50%",
+      }
+    );
   $("#slide-contact").attr("data-index", $("[data-index]").length - 1);
   /* Change slide with vertical-nav */
 
@@ -132,7 +161,8 @@ $(function () {
   });
 
   function validateEmail(email) {
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var re =
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
   }
 
@@ -158,7 +188,10 @@ $(function () {
           alert("Merci de remplir tous les champs obligatoires.");
           flag = false;
         }
-      } else if (el.attr("name") == "email" && !validateEmail(el.val().trim())) {
+      } else if (
+        el.attr("name") == "email" &&
+        !validateEmail(el.val().trim())
+      ) {
         el.addClass("error");
 
         if (flag) {
@@ -193,13 +226,21 @@ $(function () {
   };
 
   $("select").customSelect();
-  $(".customSelect").append("<span class='right-part'><i class='fa fa-caret-down'></i></span>");
-  var titleCookie = "NPraesent semper rhoncus tortor ut malesuada. Aenean non ante posuere, tincidunt erat vel, malesuada arcu.";
+  $(".customSelect").append(
+    "<span class='right-part'><i class='fa fa-caret-down'></i></span>"
+  );
+  var titleCookie =
+    "NPraesent semper rhoncus tortor ut malesuada. Aenean non ante posuere, tincidunt erat vel, malesuada arcu.";
   var closeCookie = "Euismod";
   var seeCookie = "Donec mollis nibh.";
 
-  cookieChoices.showCookieConsentBar(titleCookie, closeCookie, seeCookie, rootUrl + "/mentions-legales");
- 
+  cookieChoices.showCookieConsentBar(
+    titleCookie,
+    closeCookie,
+    seeCookie,
+    rootUrl + "/mentions-legales"
+  );
+
   function createCookie(name, value, days) {
     var expires = "";
 
@@ -234,10 +275,10 @@ $(function () {
   }
 
   // document.querySelector(".croix").addEventListener("click", closePopup);
-function closePopup () {
-  document.getElementById("popup").classList.remove("active");
-  createCookie("popupRemoved", "true", 1);
-}
+  function closePopup() {
+    document.getElementById("popup").classList.remove("active");
+    createCookie("popupRemoved", "true", 1);
+  }
 
   function displayTonicTuesdayPopup() {
     $("#popup").click(function () {
@@ -246,11 +287,11 @@ function closePopup () {
       // console.log("nico")
     });
     $("#popup").addClass("active");
-  } if (readCookie('popupRemoved') == undefined) {
-  // displayTonicTuesdayPopup();
+  }
+  if (readCookie("popupRemoved") == undefined) {
+    // displayTonicTuesdayPopup();
   }
   // console.log(readCookie(popupRemoved));
-
 
   function displayTonicTuesdayPopupAfterXMinutes(minutes) {
     var seconds = parseInt(readCookie("timePassedOnWebsite"));
@@ -272,7 +313,6 @@ function closePopup () {
   //   if (direction === 'down')
   //     displayTonicTuesdayPopup();
   // }, {continuous: false, offset: '50%'});
-
 
   $(".expertise-toggles li div:first-child").click(function () {
     var text = $(this).next("div.panel");
@@ -307,7 +347,10 @@ function closePopup () {
           alert("Merci de remplir tous les champs obligatoires.");
           flag = false;
         }
-      } else if (el.attr("name") == "email" && !validateEmail(el.val().trim())) {
+      } else if (
+        el.attr("name") == "email" &&
+        !validateEmail(el.val().trim())
+      ) {
         el.addClass("error");
 
         if (flag) {

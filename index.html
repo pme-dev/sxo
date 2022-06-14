@@ -23,6 +23,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js" integrity="sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script src="https://www.googletagmanager.com/gtag/js?id=G-9QR0K7M98Y"></script>
@@ -34,51 +37,6 @@
       gtag('config', 'G-9QR0K7M98Y');
     </script>
 
-    <link
-      rel="preload"
-      as="font"
-      crossorigin="anonymous"
-      href="./fonts/proxima-nova/ProximaNova-Light.woff"
-    />
-    <link
-      rel="preload"
-      as="font"
-      crossorigin="anonymous"
-      href="./fonts/proxima-nova/ProximaNova-Extrabld.woff"
-    />
-    <link
-      rel="preload"
-      as="font"
-      crossorigin="anonymous"
-      href="./fonts/proxima-nova/ProximaNova-Regular.woff"
-    />
-    <link
-      rel="preload"
-      as="font"
-      crossorigin="anonymous"
-      href="./fonts/gandhi/GandhiSerif-Regular-webfont.woff"
-    />
-    <link
-      rel="preload"
-      as="font"
-      crossorigin="anonymous"
-      href="./fonts/intro-inline/2D3034_0_0.woff2"
-    />
-    <link
-      rel="preload"
-      as="font"
-      crossorigin="anonymous"
-      href="./fonts/proxima-nova/ProximaNova-Regular.woff"
-    />
-    <link
-      rel="preload"
-      as="font"
-      crossorigin="anonymous"
-      href="./fonts/proxima-nova/ProximaNova-Bold.woff"
-    />
-
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
   </head>
 
   <body class="no-touch">
@@ -131,7 +89,7 @@
         <div
           id="slide-header"
           style="
-            background-image: url('./img/webagency.jpg');
+            background-image: url('./img/iStock-621142710.jpg');
           "
           class="header cover full-height"
           data-index="0"
@@ -241,26 +199,11 @@
             </div>
           </div>
         </div>
-        <div class="numerique">
-          <div class="container">
-            <div class="col-2">
-              <div class="left-part">
-                <div>
-                  <img alt="nuage accompagner" src="./img/nuages-design.png" />
-                </div>
-              </div>
-              <div class="right-part">
-                <h2>Curabitur non finibus justo</h2>
-                <p class="first">
-                  Sed id aliquam neque. Aliquam vitae malesuada quam, non
-                  sollicitudin orci. Pellentesque in augue tincidunt, cursus
-                  nulla quis, dignissim odio.
-                </p>
-                <a class="btn hvr-sweep-to-top" href="/">Nam mattis</a>
-              </div>
-            </div>
-          </div>
+        <div class="numerique" id="js-append">
+          <div></div>
+          <div class='container'><div class='col-2'><div class='left-part'><div><img src='./img/nuages-design.png' /></div></div><div class='right-part'><h2>Curabitur non finibus justo</h2><p class='first'>Sed id aliquam neque. Aliquam vitae malesuada quam, non sollicitudin orci. Pellentesque in augue tincidunt, cursus nulla quis, dignissim odio.</p><a class='btn hvr-sweep-to-top' href='/'>Nam mattis</a></div></div></div>
         </div>
+   
       </div>
       <div id="link-reference">
         <img src="./img/ensemble-logotypes_53876-120502.jpg" alt="references" />
@@ -521,28 +464,26 @@
               <div class="social-icons">
                   <div>
                       <a data-analytics='Footer RS:facebook' class='first' href='/'
-                          target='_blank'><i class="fa fa-facebook"></i></a>
+                          target='_blank'><img src="./img/facebook.png"></a>
                       <a data-analytics='Footer RS:slideshare' href='/'
-                          target='_blank'><i class='fa fa-slideshare'></i></a>
+                          target='_blank'><img src="./img/instagram.png"></a>
                   </div>
                   <div>
                       <a data-analytics='Footer RS:twitter' class='first' href='/'
-                          target='_blank'><i class='fa fa-twitter'></i></a>
-                      <a data-analytics='Footer RS:instagram' href='/' target='_blank'><i
-                              class='fa fa-instagram'></i></a>
-                      <a data-analytics='Footer RS:linkedin' href='/'
-                          target='_blank'><i class='fa fa-linkedin'></i></a>
+                          target='_blank'><img src="./img/twitter.png"></a>
+  
                   </div>
               </div>
-              <a class='w3c' target='_blank' href="/">
-                  <img src="https://www.w3.org/Icons/valid-html401" alt="Valid XHTML 4.01!" />
-              </a>
           </div>
       </div>
   
     </section>
   </body>
 </html>
+
+
+<link rel="stylesheet" type="text/css" href="./css/index.css" />
+<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
 
 <script src="./js/main.js"></script>
 <script src="./js/cookiechoices.js"></script>
